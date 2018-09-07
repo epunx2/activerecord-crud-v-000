@@ -21,7 +21,7 @@ def can_be_created_with_a_hash_of_attributes
       in_theaters: false
   }
   # binding.pry
-  movie = Movie.new(*attributes)
+  movie = Movie.new(**attributes)
 end
 
 def can_be_created_in_a_block(args = __)
